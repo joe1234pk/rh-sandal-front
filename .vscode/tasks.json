@@ -197,6 +197,60 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Build without redirects file",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate Worker assets without redirects",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"wrangler",
+				"deploy",
+				"--dry-run"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate Git ignore rules",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"check-ignore",
+				"-v",
+				".vscode/tasks.json",
+				".wrangler/test",
+				".env",
+				".env.example"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check ignore patterns including tracked files",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"check-ignore",
+				"-v",
+				"--no-index",
+				".vscode/tasks.json",
+				".wrangler/test",
+				".env",
+				".env.example"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }

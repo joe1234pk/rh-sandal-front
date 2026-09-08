@@ -1,4 +1,8 @@
 node_modules/
 dist/
+.vscode/
+.wrangler/
+.env
 .env.local
 .env.*.local
+!.env.example
