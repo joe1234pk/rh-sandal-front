@@ -135,6 +135,68 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Install Wrangler locally",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"install",
+				"--save-dev",
+				"wrangler"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate Worker static assets deployment",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Dry run Wrangler deployment",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"wrangler",
+				"deploy",
+				"--dry-run"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check deployment files before push",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status",
+				"--short",
+				"--ignored"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check tracked environment file",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"ls-files",
+				".env",
+				".env.example",
+				"wrangler.jsonc",
+				"package.json",
+				"package-lock.json"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
