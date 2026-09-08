@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 import WhatsAppButton from './WhatsAppButton';
 import { assetUrl } from '../config';
+import { getTierLabel } from '../data/catalogTaxonomy';
 
 export default function ProductCard({ product }) {
   return (
     <article className="product-card">
       <Link className="product-image-wrap" to={`/product/${product.id}`}>
         <img src={assetUrl(product.image)} alt={product.name} loading="lazy" />
-        <span className="product-category">{product.tier1} / {product.tier2}</span>
+        <span className="product-category">{getTierLabel('tier1', product.tier1)} / {getTierLabel('tier2', product.tier2)}</span>
         <span className="image-arrow">↗</span>
       </Link>
       <div className="product-info">

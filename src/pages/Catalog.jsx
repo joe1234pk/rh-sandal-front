@@ -3,12 +3,13 @@ import products from '../data/products.json';
 import ProductCard from '../components/ProductCard';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { siteConfig } from '../config';
+import { getTier2Keys, getTierLabel } from '../data/catalogTaxonomy';
 
 export default function Catalog() {
   const [tier1, setTier1] = useState(siteConfig.visibleTier1);
   const [tier2, setTier2] = useState(siteConfig.allCollectionsLabel);
   const tier1Categories = [siteConfig.visibleTier1];
-  const tier2Categories = [siteConfig.allCollectionsLabel, ...new Set(products.filter((product) => product.tier1 === tier1).map((product) => product.tier2))];
+  const tier2Categories = [siteConfig.allCollectionsLabel, ...getTier2Keys(tier1).filter((key) => products.some((product) => product.tier1 === tier1 && product.tier2 === key))];
   const visibleProducts = products.filter((product) => product.tier1 === tier1 && (tier2 === siteConfig.allCollectionsLabel || product.tier2 === tier2));
 
   function selectTier1(category) {
@@ -16,5 +17,5 @@ export default function Catalog() {
     setTier2(siteConfig.allCollectionsLabel);
   }
 
-  return <section className="catalog-page section-shell"><div className="catalog-intro"><div><p className="eyebrow">Wholesale collection / {siteConfig.catalogYear}</p><h1>Made to move.<br /><em>Built to choose.</em></h1></div><div className="catalog-intro-side"><p>Start with a product category, then explore the collection that fits your market. Every model is made for dependable scale.</p><WhatsAppButton /></div></div><div className="catalog-controls"><div className="tier-control"><span className="tier-label">01 / Product category</span><div className="tier-options" role="group" aria-label="Choose product category">{tier1Categories.map((item) => <button key={item} className={tier1 === item ? 'selected' : ''} onClick={() => selectTier1(item)}>{item}</button>)}</div></div><div className="tier-control"><span className="tier-label">02 / Collection</span><div className="tier-options collection-options" role="group" aria-label="Choose collection">{tier2Categories.map((item) => <button key={item} className={tier2 === item ? 'selected' : ''} onClick={() => setTier2(item)}>{item}</button>)}</div></div></div><div className="catalog-result-bar"><span>{tier1} / {tier2}</span><span>{visibleProducts.length} {visibleProducts.length === 1 ? 'model' : 'models'}</span></div><div className="product-grid catalog-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} />)}</div></section>;
+  return <section className="catalog-page section-shell"><div className="catalog-intro"><div><p className="eyebrow">Wholesale collection / {siteConfig.catalogYear}</p><h1>Made to move.<br /><em>Built to choose.</em></h1></div><div className="catalog-intro-side"><p>Start with a product category, then explore the collection that fits your market. Every model is made for dependable scale.</p><WhatsAppButton /></div></div><div className="catalog-controls"><div className="tier-control"><span className="tier-label">01 / Product category</span><div className="tier-options" role="group" aria-label="Choose product category">{tier1Categories.map((item) => <button key={item} className={tier1 === item ? 'selected' : ''} onClick={() => selectTier1(item)}>{getTierLabel('tier1', item)}</button>)}</div></div><div className="tier-control"><span className="tier-label">02 / Collection</span><div className="tier-options collection-options" role="group" aria-label="Choose collection">{tier2Categories.map((item) => <button key={item} className={tier2 === item ? 'selected' : ''} onClick={() => setTier2(item)}>{item === siteConfig.allCollectionsLabel ? item : getTierLabel('tier2', item)}</button>)}</div></div></div><div className="catalog-result-bar"><span>{getTierLabel('tier1', tier1)} / {tier2 === siteConfig.allCollectionsLabel ? tier2 : getTierLabel('tier2', tier2)}</span><span>{visibleProducts.length} {visibleProducts.length === 1 ? 'model' : 'models'}</span></div><div className="product-grid catalog-grid">{visibleProducts.map((product) => <ProductCard key={product.id} product={product} />)}</div></section>;
 }

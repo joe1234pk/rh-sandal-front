@@ -7,7 +7,7 @@ export const siteConfig = {
   whatsappNumber: (env.VITE_WHATSAPP_NUMBER || '8613800000000').replace(/\D/g, ''),
   assetBaseUrl: (env.VITE_ASSET_BASE_URL || 'https://assets.rhluxuryfootwear.com').replace(/\/$/, ''),
   catalogYear: env.VITE_CATALOG_YEAR || new Date().getFullYear().toString(),
-  visibleTier1: env.VITE_VISIBLE_TIER1 || 'Sandals',
+  visibleTier1: env.VITE_VISIBLE_TIER1 || 'sandals',
   allCollectionsLabel: env.VITE_ALL_COLLECTIONS_LABEL || 'All collections',
   heroImage: env.VITE_HERO_IMAGE || 'sl-001.webp',
   whatsappDefaultMessage: env.VITE_WHATSAPP_DEFAULT_MESSAGE || 'Hi, I would like to discuss a wholesale footwear order.',
