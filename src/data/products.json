@@ -1,0 +1,112 @@
+[
+  {
+    "id": "SL-001",
+    "name": "Classic Genuine Leather Slide",
+    "tier1": "Sandals",
+    "tier2": "Dior",
+    "moq": "500 pairs",
+    "material": "Genuine upper / high-density rubber sole",
+    "image": "sl-001.webp",
+    "description": "A durable everyday slide with a clean, dependable silhouette for hot-climate markets.",
+    "featured": true
+  },
+  {
+    "id": "SL-002",
+    "name": "Ultra-Lightweight EVA Comfort",
+    "tier1": "Sandals",
+    "tier2": "Hermes",
+    "moq": "1,000 pairs",
+    "material": "High-grade EVA foam",
+    "image": "sl-002.webp",
+    "description": "Waterproof and highly flexible, engineered for high-volume distribution.",
+    "featured": true
+  },
+  {
+    "id": "SL-003",
+    "name": "Textured Urban Recovery Slide",
+    "tier1": "Sandals",
+    "tier2": "LV",
+    "moq": "800 pairs",
+    "material": "Moulded EVA / textured footbed",
+    "image": "sl-003.webp",
+    "description": "A considered, contemporary recovery slide made for daily movement.",
+    "featured": false
+  },
+  {
+    "id": "SL-004",
+    "name": "Heritage Cross-Strap Sandal",
+    "tier1": "Sandals",
+    "tier2": "Zara",
+    "moq": "500 pairs",
+    "material": "Full-grain leather / rubber outsole",
+    "image": "sl-004.webp",
+    "description": "A structured cross-strap profile balancing tactile quality with factory scale.",
+    "featured": false
+  },
+  {
+    "id": "CL-001",
+    "name": "Heritage Utility Clog",
+    "tier1": "Clogs",
+    "tier2": "Heritage",
+    "moq": "600 pairs",
+    "material": "Moulded EVA / ventilated upper",
+    "image": "sl-003.webp",
+    "description": "A lightweight utility clog made for flexible, all-day wear.",
+    "featured": false
+  },
+  {
+    "id": "CL-002",
+    "name": "Luxe Comfort Clog",
+    "tier1": "Clogs",
+    "tier2": "Luxe",
+    "moq": "800 pairs",
+    "material": "Soft EVA / contoured footbed",
+    "image": "sl-002.webp",
+    "description": "A refined comfort clog with a generously cushioned profile.",
+    "featured": false
+  },
+  {
+    "id": "SD-001",
+    "name": "Dune Pool Slide",
+    "tier1": "Slides",
+    "tier2": "Dune",
+    "moq": "1,000 pairs",
+    "material": "Water-resistant EVA / textured sole",
+    "image": "sl-002.webp",
+    "description": "An easy, water-ready slide designed for high-volume seasonal demand.",
+    "featured": false
+  },
+  {
+    "id": "SD-002",
+    "name": "Zest Sport Slide",
+    "tier1": "Slides",
+    "tier2": "Zest",
+    "moq": "800 pairs",
+    "material": "Dual-density EVA / grip outsole",
+    "image": "sl-003.webp",
+    "description": "A secure, sport-led slide with a resilient grip sole.",
+    "featured": false
+  },
+  {
+    "id": "CS-001",
+    "name": "Heritage Everyday Loafer",
+    "tier1": "Closed Shoes",
+    "tier2": "Heritage",
+    "moq": "500 pairs",
+    "material": "Genuine leather / rubber outsole",
+    "image": "sl-004.webp",
+    "description": "A durable closed-shoe profile with an easy, commercial fit.",
+    "featured": false
+  },
+  {
+    "id": "CS-002",
+    "name": "Luxe Street Trainer",
+    "tier1": "Closed Shoes",
+    "tier2": "Luxe",
+    "moq": "700 pairs",
+    "material": "Synthetic leather / EVA midsole",
+    "image": "sl-001.webp",
+    "description": "A streamlined trainer built around comfort and repeatable production.",
+    "featured": false
+  }
+]
