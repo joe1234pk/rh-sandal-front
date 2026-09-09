@@ -12,10 +12,11 @@ export default function Footer() {
         </div>
         <div className="footer-links">
           <Link to="/catalog">Browse catalog</Link>
+          <Link to="/about">About us</Link>
         </div>
         <div className="footer-contact"><a className="footer-email" href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail} <span>↗</span></a><WhatsAppButton compact /></div>
       </div>
-      <div className="footer-bottom"><span>© {new Date().getFullYear()} {siteConfig.brandName}</span><span>Made for wholesale / built to last</span></div>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} {siteConfig.brandName}</span><span>Made at source / built to last</span></div>
     </footer>
   );
 }

@@ -2,5 +2,50 @@ import { useState } from 'react';
 
 export default function BecomeAgent() {
   const [sent, setSent] = useState(false);
-  return <section className="agent-page section-shell"><div className="agent-intro"><p className="eyebrow">Work with RH</p><h1>Bring a better<br /><em>range to market.</em></h1><p>Tell us where you operate and what you are looking for. Our team will respond with the right collection, pricing and next steps.</p></div><form className="agent-form" onSubmit={(event) => { event.preventDefault(); setSent(true); }}>{sent ? <div className="success-message"><span>✓</span><h2>Thank you.</h2><p>We have your details. Our sales team will be in touch shortly.</p></div> : <><label>Full name<input required name="name" placeholder="Your name" /></label><label>Business email<input required type="email" name="email" placeholder="you@company.com" /></label><label>Market / country<input required name="market" placeholder="Where do you operate?" /></label><label>What are you looking for?<textarea required name="message" rows="4" placeholder="Tell us about your product needs" /></label><button className="button button-dark" type="submit">Send inquiry <span>↗</span></button></>}</form></section>;
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    setSent(true);
+  }
+
+  return (
+    <section className="agent-page section-shell">
+      <div className="agent-intro">
+        <p className="eyebrow">Work with RH</p>
+        <h1>Bring a better<br /><em>range to market.</em></h1>
+        <p>Tell us where you operate and what you are looking for. Our team will respond with the right collection, pricing and next steps.</p>
+      </div>
+      <form className="agent-form" onSubmit={handleSubmit}>
+        {sent ? (
+          <div className="success-message">
+            <span>✓</span>
+            <h2>Thank you.</h2>
+            <p>We have your details. Our sales team will be in touch shortly.</p>
+          </div>
+        ) : (
+          <>
+            <label>
+              Full name
+              <input required name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Business email
+              <input required type="email" name="email" placeholder="you@company.com" />
+            </label>
+            <label>
+              Market / country
+              <input required name="market" placeholder="Where do you operate?" />
+            </label>
+            <label>
+              What are you looking for?
+              <textarea required name="message" rows="4" placeholder="Tell us about your product needs" />
+            </label>
+            <button className="button button-dark" type="submit">
+              Send inquiry <span>↗</span>
+            </button>
+          </>
+        )}
+      </form>
+    </section>
+  );
 }

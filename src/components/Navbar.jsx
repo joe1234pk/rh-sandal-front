@@ -11,6 +11,7 @@ export default function Navbar() {
         </Link>
         <nav className="main-nav" aria-label="Main navigation">
           <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/catalog">Catalog</NavLink>
+          <NavLink className={({ isActive }) => isActive ? 'active' : ''} to="/about">About</NavLink>
         </nav>
       </div>
     </header>

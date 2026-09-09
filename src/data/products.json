@@ -8,7 +8,7 @@
     "material": "Microfiber leather",
     "image": "id/id-crs-b.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "id-crs-bl",
@@ -19,7 +19,7 @@
     "material": "Microfiber leather",
     "image": "id/id-crs-bl.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "id-crs-gr",
@@ -41,7 +41,7 @@
     "material": "Microfiber leather",
     "image": "id/id-crs-w.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "id-csl-b",
@@ -52,7 +52,7 @@
     "material": "Microfiber leather",
     "image": "id/id-csl-b.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "id-nm-gr",
@@ -63,7 +63,7 @@
     "material": "Microfiber leather",
     "image": "id/id-nm-gr.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "id-rz-b",
@@ -85,7 +85,7 @@
     "material": "Microfiber leather",
     "image": "id/id-rz-g.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "id-rz-y",
@@ -96,7 +96,7 @@
     "material": "Microfiber leather",
     "image": "id/id-rz-y.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "iz-crs-b",
@@ -118,7 +118,7 @@
     "material": "Microfiber leather",
     "image": "iz/iz-crs-brn-01.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "iz-crs-w",
@@ -140,7 +140,7 @@
     "material": "Microfiber leather",
     "image": "iz/iz-fsh-b-01.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "iz-fsh-brn",
@@ -151,7 +151,7 @@
     "material": "Microfiber leather",
     "image": "iz/iz-fsh-brn-01.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "iz-fsh-w",
@@ -162,7 +162,7 @@
     "material": "Microfiber leather",
     "image": "iz/iz-fsh-w-01.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "iz-mltcrs-b",
@@ -173,7 +173,7 @@
     "material": "Microfiber leather",
     "image": "iz/iz-mltcrs-b-01.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "iz-mltcrs-w",
@@ -184,7 +184,7 @@
     "material": "Microfiber leather",
     "image": "iz/iz-mltcrs-w-01.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "iz-yi-b",
@@ -217,10 +217,10 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-b.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
-    "id": "ih-h-bl-b_1",
+    "id": "ih-h-bl-b",
     "name": "",
     "tier1": "sandals",
     "tier2": "hermes",
@@ -239,7 +239,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-bl-w.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-bu-gry",
@@ -250,7 +250,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-bu-gry.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-dot-gr",
@@ -261,7 +261,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-dot-gr.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-fb",
@@ -272,7 +272,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-fb.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-grd-grb",
@@ -283,7 +283,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-grd-grb.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-grd-org",
@@ -294,7 +294,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-grd-org.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-grd-rgry",
@@ -305,7 +305,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-grd-rgry.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-nm",
@@ -316,7 +316,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-nm.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-org-ctbtn",
@@ -327,7 +327,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-org-ctbtn.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-r-wbtn",
@@ -338,7 +338,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-r-wbtn.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-r",
@@ -349,7 +349,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-r.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-sh",
@@ -360,7 +360,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-sh.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-skb",
@@ -371,7 +371,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-skb.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-slim-w",
@@ -393,7 +393,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-snk-b.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-snk-org",
@@ -404,7 +404,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-snk-org.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-snk-r",
@@ -415,7 +415,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-snk-r.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-snk-w",
@@ -426,7 +426,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-snk-w.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-snkh-w",
@@ -437,7 +437,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-snkh-w.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-snk-brw",
@@ -448,7 +448,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-snk-brw.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-w",
@@ -459,7 +459,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-w.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-wb",
@@ -470,7 +470,7 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-wb.webp",
     "description": "",
-    "featured": true
+    "featured": false
   },
   {
     "id": "ih-h-yll-b",
@@ -481,6 +481,138 @@
     "material": "Microfiber leather",
     "image": "ih/ih-h-yll-b.webp",
     "description": "",
-    "featured": true
+    "featured": false
+  },
+  {
+    "id": "ilv-crs-b",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-crs-b.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-crs-bnw",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-crs-bnw.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-crs-gry",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-crs-gry.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-crs-sbl",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-crs-sbl.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-crs-wbrn",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-crs-wbrn.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-lv-b",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-lv-b.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-lv-brn",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-lv-brn.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-lv-dbl",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-lv-dbl.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-lv-gry",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-lv-gry.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-lv-orgnb",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-lv-orgnb.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-lv-w",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-lv-w.webp",
+    "description": "",
+    "featured": false
+  },
+  {
+    "id": "ilv-lv-ynbrn",
+    "name": "",
+    "tier1": "sandals",
+    "tier2": "lv",
+    "moq": "30 pairs",
+    "material": "Microfiber leather",
+    "image": "ilv/ilv-lv-ynbrn.webp",
+    "description": "",
+    "featured": false
   }
 ]

@@ -1,6 +1,8 @@
 const env = import.meta.env;
+const theme = env.VITE_THEME === 'dark' ? 'dark' : 'light';
 
 export const siteConfig = {
+  theme,
   brandName: env.VITE_BRAND_NAME || 'RH Luxury Footwear',
   brandShortName: env.VITE_BRAND_SHORT_NAME || 'RH',
   contactEmail: env.VITE_CONTACT_EMAIL || 'info@rhluxuryfootwear.com',
@@ -10,6 +12,8 @@ export const siteConfig = {
   visibleTier1: env.VITE_VISIBLE_TIER1 || 'sandals',
   allCollectionsLabel: env.VITE_ALL_COLLECTIONS_LABEL || 'All collections',
   heroImage: env.VITE_HERO_IMAGE || 'sl-001.webp',
+  aboutVideo: 'presentation.mp4',
+  aboutVideoPoster: 'presentation-cover.webp',
   whatsappDefaultMessage: env.VITE_WHATSAPP_DEFAULT_MESSAGE || 'Hi, I would like to discuss a wholesale footwear order.',
   whatsappProductMessage: env.VITE_WHATSAPP_PRODUCT_MESSAGE || 'Hi, I am interested in Model: {productId}',
 };
