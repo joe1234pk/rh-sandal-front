@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { trackEvent } from '../analytics';
 
 export default function BecomeAgent() {
   const [sent, setSent] = useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
+    trackEvent('generate_lead', { form_name: 'become_agent' });
     setSent(true);
   }
 
