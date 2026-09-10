@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import Hls from 'hls.js';
 import { assetUrl, siteConfig } from '../config';
 
 export default function AboutUs() {
@@ -16,16 +15,20 @@ export default function AboutUs() {
     const video = videoRef.current;
     const source = assetUrl(siteConfig.aboutVideo);
     let player;
+    let cancelled = false;
 
     if (!video) return undefined;
 
     if (/\.m3u8(?:$|\?)/i.test(source)) {
-      if (Hls.isSupported()) {
-        player = new Hls();
-        player.loadSource(source);
-        player.attachMedia(video);
-      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      if (video.canPlayType('application/vnd.apple.mpegurl')) {
         video.src = source;
+      } else {
+        import('hls.js').then(({ default: Hls }) => {
+          if (cancelled || !Hls.isSupported()) return;
+          player = new Hls();
+          player.loadSource(source);
+          player.attachMedia(video);
+        });
       }
     } else {
       video.src = source;
@@ -40,6 +43,7 @@ export default function AboutUs() {
     }
 
     return () => {
+      cancelled = true;
       video.removeEventListener('loadedmetadata', playWhenReady);
       if (player) {
         player.destroy();
