@@ -12,7 +12,7 @@ export const siteConfig = {
   catalogYear: env.VITE_CATALOG_YEAR || new Date().getFullYear().toString(),
   visibleTier1: env.VITE_VISIBLE_TIER1 || 'sandals',
   allCollectionsLabel: env.VITE_ALL_COLLECTIONS_LABEL || 'All collections',
-  heroImage: env.VITE_HERO_IMAGE || 'sl-001.webp',
+  heroImage: env.VITE_HERO_IMAGE || 'id/id-crs-b.webp',
   aboutVideo: 'presentation.mp4',
   aboutVideoPoster: 'presentation-cover.webp',
   whatsappDefaultMessage: env.VITE_WHATSAPP_DEFAULT_MESSAGE || 'Hi, I would like to discuss a wholesale footwear order.',

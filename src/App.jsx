@@ -1,14 +1,15 @@
 import { BrowserRouter, Navigate, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Catalog from './pages/Catalog';
-import ProductDetail from './pages/ProductDetail';
-import AboutUs from './pages/AboutUs';
-import BecomeAgent from './pages/BecomeAgent';
 import { siteConfig } from './config';
 import { trackPageView } from './analytics';
+
+const Home = lazy(() => import('./pages/Home'));
+const Catalog = lazy(() => import('./pages/Catalog'));
+const ProductDetail = lazy(() => import('./pages/ProductDetail'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
+const BecomeAgent = lazy(() => import('./pages/BecomeAgent'));
 
 function AnalyticsPageView() {
   const location = useLocation();
@@ -25,5 +26,5 @@ function NotFound() {
 }
 
 export default function App() {
-  return <BrowserRouter><AnalyticsPageView /><div className={`app-shell theme-${siteConfig.theme}`}><Navbar /><main><Routes><Route path="/" element={<Navigate replace to="/catalog" />} /><Route path="/home" element={<Home />} /><Route path="/catalog" element={<Catalog />} /><Route path="/product/:id" element={<ProductDetail />} /><Route path="/about" element={<AboutUs />} /><Route path="/agent" element={<BecomeAgent />} /><Route path="*" element={<NotFound />} /></Routes></main><Footer /></div></BrowserRouter>;
+  return <BrowserRouter><AnalyticsPageView /><div className={`app-shell theme-${siteConfig.theme}`}><Navbar /><main><Suspense fallback={<section className="section-shell" aria-busy="true"><p className="eyebrow">Loading catalog</p></section>}><Routes><Route path="/" element={<Navigate replace to="/catalog" />} /><Route path="/home" element={<Home />} /><Route path="/catalog" element={<Catalog />} /><Route path="/product/:id" element={<ProductDetail />} /><Route path="/about" element={<AboutUs />} /><Route path="/agent" element={<BecomeAgent />} /><Route path="*" element={<NotFound />} /></Routes></Suspense></main><Footer /></div></BrowserRouter>;
 }
