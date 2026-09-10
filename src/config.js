@@ -3,6 +3,7 @@ const theme = env.VITE_THEME === 'dark' ? 'dark' : 'light';
 
 export const siteConfig = {
   theme,
+  siteUrl: (env.VITE_SITE_URL || 'https://rhluxuryfootwear.com').replace(/\/$/, ''),
   brandName: env.VITE_BRAND_NAME || 'RH Luxury Footwear',
   brandShortName: env.VITE_BRAND_SHORT_NAME || 'RH',
   contactEmail: env.VITE_CONTACT_EMAIL || 'info@rhluxuryfootwear.com',
@@ -16,6 +17,7 @@ export const siteConfig = {
   aboutVideoPoster: 'presentation-cover.webp',
   whatsappDefaultMessage: env.VITE_WHATSAPP_DEFAULT_MESSAGE || 'Hi, I would like to discuss a wholesale footwear order.',
   whatsappProductMessage: env.VITE_WHATSAPP_PRODUCT_MESSAGE || 'Hi, I am interested in Model: {productId}',
+  gaMeasurementId: env.VITE_GA_MEASUREMENT_ID || '',
 };
 
 export function assetUrl(path) {

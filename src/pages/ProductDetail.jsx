@@ -4,6 +4,7 @@ import products from '../data/products.json';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { assetUrl } from '../config';
 import { getTierLabel } from '../data/catalogTaxonomy';
+import { trackEvent } from '../analytics';
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -11,6 +12,9 @@ export default function ProductDetail() {
   const gallery = product ? [product.image, ...(product.gallery || [])] : [];
   const [selectedImage, setSelectedImage] = useState(gallery[0] || '');
   useEffect(() => setSelectedImage(gallery[0] || ''), [id]);
+  useEffect(() => {
+    if (product) trackEvent('view_item', { item_id: product.id, item_name: product.name });
+  }, [product]);
 
   if (!product) {
     return <section className="section-shell"><p className="eyebrow">Product / Not found</p><h1>That model<br /><em>is unavailable.</em></h1><Link className="button button-dark" to="/catalog">Browse the catalog <span>↗</span></Link></section>;
