@@ -9,6 +9,7 @@ import { trackEvent } from '../analytics';
 export default function ProductDetail() {
   const { id } = useParams();
   const product = products.find((item) => item.id === id);
+  const modelName = product?.name || (product ? `Model ${product.id}` : '');
   const gallery = product ? [product.image, ...(product.gallery || [])] : [];
   const [selectedImage, setSelectedImage] = useState(gallery[0] || '');
   useEffect(() => setSelectedImage(gallery[0] || ''), [id]);
@@ -25,12 +26,12 @@ export default function ProductDetail() {
       <Link className="back-link" to="/catalog">← Back to catalog</Link>
       <div className="detail-layout">
         <div>
-          <div className="detail-image"><img src={assetUrl(selectedImage)} alt={product.name} /></div>
-          {gallery.length > 1 && <div className="detail-gallery" aria-label="Product image gallery">{gallery.map((image, index) => <button key={image} className={selectedImage === image ? 'selected' : ''} onClick={() => setSelectedImage(image)} aria-label={`View ${product.name} image ${index + 1}`}><img src={assetUrl(image)} alt="" loading="lazy" /></button>)}</div>}
+          <div className="detail-image"><img src={assetUrl(selectedImage)} alt={modelName} /></div>
+          {gallery.length > 1 && <div className="detail-gallery" aria-label="Product image gallery">{gallery.map((image, index) => <button key={image} className={selectedImage === image ? 'selected' : ''} onClick={() => setSelectedImage(image)} aria-label={`View ${modelName} image ${index + 1}`}><img src={assetUrl(image)} alt="" loading="lazy" /></button>)}</div>}
         </div>
         <div className="detail-copy">
           <p className="eyebrow">{getTierLabel('tier1', product.tier1)} / {getTierLabel('tier2', product.tier2)} / {product.id}</p>
-          <h1>{product.name}</h1>
+          <h1>{modelName}</h1>
           <p className="detail-description">{product.description}</p>
           <dl className="spec-list"><div><dt>Collection</dt><dd>{getTierLabel('tier2', product.tier2)}</dd></div><div><dt>Material</dt><dd>{product.material}</dd></div><div><dt>Minimum order</dt><dd>{product.moq}</dd></div><div><dt>Production</dt><dd>Made to order</dd></div></dl>
           <WhatsAppButton productId={product.id} />

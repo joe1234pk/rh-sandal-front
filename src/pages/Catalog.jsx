@@ -86,7 +86,7 @@ export default function Catalog() {
         <span>{visibleProducts.length} {visibleProducts.length === 1 ? 'model' : 'models'}</span>
       </div>
       <div className="product-grid catalog-grid">
-        {productsToRender.map((product) => <ProductCard key={product.id} product={product} />)}
+        {productsToRender.map((product, index) => <ProductCard key={product.id} product={product} priority={index === 0} />)}
       </div>
       {hasMoreProducts && (
         <div className="catalog-load-more">
