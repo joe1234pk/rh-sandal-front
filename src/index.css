@@ -67,8 +67,8 @@ em { font-family: var(--serif); font-weight: 500; }
 .product-info { padding-top: 18px; position: relative; }
 .product-title-row { display: flex; justify-content: space-between; gap: 10px; font-family: var(--mono); font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
 .product-id { color: var(--ink); }
-.product-info h3 { font-size: 21px; letter-spacing: -.045em; margin: 15px 0 9px; }
-.product-info h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.product-info h2 { font-size: 21px; letter-spacing: -.045em; margin: 15px 0 9px; }
+.product-info h2 a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .product-info p { color: var(--muted); max-width: 390px; font-size: 12px; line-height: 1.55; margin-bottom: 18px; }
 .whatsapp-link.compact { font-size: 11px; }
 .whatsapp-link.compact .whatsapp-mark { width: 30px; height: 30px; font-size: 15px; }

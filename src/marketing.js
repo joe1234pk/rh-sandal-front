@@ -2,6 +2,32 @@ import { siteConfig } from './config';
 
 const UTM_SOURCE_KEY = 'rh_utm_source';
 
+export const marketingQueryKeys = new Set([
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_id',
+  'utm_term',
+  'utm_content',
+  'gclid',
+  'gbraid',
+  'wbraid',
+  'fbclid',
+  'msclkid',
+]);
+
+export function marketingSearch(search = '') {
+  const input = new URLSearchParams(search);
+  const output = new URLSearchParams();
+
+  for (const [key, value] of input) {
+    if (marketingQueryKeys.has(key.toLowerCase())) output.append(key, value);
+  }
+
+  const query = output.toString();
+  return query ? `?${query}` : '';
+}
+
 export function captureUtmSource() {
   if (typeof window === 'undefined') return '';
 
